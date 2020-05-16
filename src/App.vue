@@ -7,15 +7,22 @@
       </fade-transition>
     </main>
     <router-view name="footer"></router-view>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Deals></Deals>   
   </div>
 </template>
 
 <script>
 import { FadeTransition } from "vue2-transitions";
+import HelloWorld from './components/HelloWorld.vue'
+import Deals from './components/Deals.vue'
 
 export default {
   components: {
     FadeTransition,
+    HelloWorld,
+    Deals
   },
-};
+}
 </script>
