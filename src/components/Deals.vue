@@ -2,7 +2,7 @@
   <div class="Deals">
     <h1 id="test">Test Deals Page</h1>
     <ul>
-      <li v-for="todo of todos" :key="todo.id">{{todo.title}}</li>
+      <li v-for="todo of todos" :key="todo.id">{{ todo.title }}</li>
     </ul>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
 
   data() {
     return {
-      todos: []
+      todos: [],
     };
   },
 
@@ -23,18 +23,18 @@ export default {
   async created() {
     try {
       const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
-
+      console.log("paul's test");
       this.todos = res.data;
       console.log(res);
     } catch (e) {
       console.error(e);
     }
-  }
+  },
 };
 </script>
 
 <style>
 #test {
-    color: red;
+  color: red;
 }
 </style>
