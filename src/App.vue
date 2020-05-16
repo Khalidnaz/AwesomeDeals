@@ -5,6 +5,7 @@
       <fade-transition origin="center" mode="out-in" :duration="250">
         <router-view />
       </fade-transition>
+      <Basenav></Basenav>
     </main>
     <router-view name="footer"></router-view>
     <img alt="Vue logo" src="./assets/logo.png">
@@ -14,13 +15,13 @@
 </template>
 
 <script>
-import { FadeTransition } from "vue2-transitions";
+// import { FadeTransition } from "vue2-transitions";
 import HelloWorld from './components/HelloWorld.vue'
 import Deals from './components/Deals.vue'
 
 export default {
   components: {
-    FadeTransition,
+    // FadeTransition,
     HelloWorld,
     Deals
   },
