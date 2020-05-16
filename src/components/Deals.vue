@@ -23,7 +23,7 @@ export default {
   async created() {
     try {
       const res = await axios.get("https://jsonplaceholder.typicode.com/posts");
-      console.log("paul's test");
+
       this.todos = res.data;
       console.log(res);
     } catch (e) {
